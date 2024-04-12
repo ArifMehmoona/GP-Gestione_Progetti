@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchor Link</title>
+<style>
+  /* Stili per il testo cliccabile */
+  .cliccabile {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    padding-left: 100px;
+  }
+</style>
+</head>
+<body>
+
+<p>Ciao, qui puoi scegliere i best sellers a partire dai anni '90</p>
+
+<!-- Parole cliccabili -->
+<p>Anni 1980 <span class="cliccabile" onclick="scrollToAnchor('sezion1980')">
+    <div>'80</div>
+    <div>'81</div>
+    <div>'82</div>
+    <div>'83</div>
+    <div>'84</div>
+    <div>'85</div>
+    <div>'86</div>
+    <div>'87</div>
+    <div>'88</div>
+    <div>'89c</div>
+    
+
+
+</span></p>
+
+<!-- Sezione di destinazione -->
+<div id="sezione1980">
+  <h2>Sezione 1980</h2>
+  <p>Questo è il paragrafo relativo a Mario.</p>
+</div>
+
+<script>
+function scrollToAnchor(anchor) {
+  // Trova l'elemento con l'id corrispondente all'ancora
+  var targetElement = document.getElementById(anchor);
+  
+  // Controlla se l'elemento esiste
+  if (targetElement) {
+    // Calcola la posizione dell'elemento rispetto all'inizio della pagina
+    var targetOffset = targetElement.offsetTop;
+    
+    // Esegui lo scorrimento verso l'ancora
+    window.scrollTo({
+      top: targetOffset,
+      behavior: 'smooth' // Esegui lo scorrimento in modo fluido
+    });
+  }
+}
+</script>
+
+</body>
+</html>

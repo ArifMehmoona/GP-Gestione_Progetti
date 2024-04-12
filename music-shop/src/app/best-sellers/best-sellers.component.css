@@ -1,0 +1,6 @@
+.cliccabile {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    margin-right: 100px; /* Aggiunge spazio a destra di ciascuna parola cliccabile */
+}
