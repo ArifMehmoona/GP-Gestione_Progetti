@@ -15,23 +15,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+
             <li class="nav-item">
-              <a class="nav-link" routerLink="/cd">CD</a>
+              <a class="nav-link" routerLink="/cd" routerLinkActive="active-menu" [state]="cd">CD</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/vinyl">Vinili</a>
+              <a class="nav-link" routerLink="/vinyl"routerLinkActive="active-menu" [state]="vinyl">Vinili</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/best-sellers">Best Sellers</a>
+              <a class="nav-link" routerLink="/best-sellers"routerLinkActive="active-menu" [state]="best_sellers">Best Sellers</a>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/cart"routerLinkActive="active-menu" [state]="cart">Carrello</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/search-cd">Ricerca CD</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/search-vinyl">Ricerca Vinili</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/cart">Carrello</a>
+              <a class="nav-link" routerLink="/search"routerLinkActive="active-menu" [state]="search">Search</a>
             </li>
           </ul>
         </div>
