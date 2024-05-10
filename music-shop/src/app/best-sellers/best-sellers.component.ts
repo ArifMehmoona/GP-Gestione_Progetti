@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./best-sellers.component.css']
 })
 export class BestSellersComponent {
+[x: string]: any;
 
 }

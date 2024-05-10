@@ -1,1 +1,19 @@
-<p>best-sellers works!</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best seller</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<div class="container mt-3" >
+  <h1 style="color: #0abab5">best seller</h1>
+    <div class="card">
+      <div class="card-body" *ngFor="let bs of best_sellers">
+        <h5 class="card-title"><b>Nome Album: </b></h5>
+        <p class="card-text">Nome Artista: </p>
+        <p class="card-text">Prezzo: </p>
+        <img src="" width="250" length ="300" class="float-right">
+      </div>
+    </div>
+  </div>
